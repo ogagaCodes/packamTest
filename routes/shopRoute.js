@@ -1,14 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const  blogRouter = express.Router();
+const  shopRouter = express.Router();
 
 
-blogRouter.route('/')
+  shopRouter.route('/')
        .get((req, res)=>{
-           res.render('blog.ejs');
+           res.render('shop.ejs');
        })
   
 
   
 
-module.exports = blogRouter;
+module.exports = shopRouter;

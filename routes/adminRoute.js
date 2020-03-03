@@ -6,7 +6,7 @@ const  adminRouter = express.Router();
   adminRouter.route('/')
        .get((req, res)=>{
            res.render('admin.ejs');
-       })
+       });
   
 
   

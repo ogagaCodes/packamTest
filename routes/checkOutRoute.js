@@ -1,14 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const router = express.Router();
+const checkOutRouter = express.Router();
 
-function router(){
-  aboutUsRouter.router.get('/', (req, res)=>{
-      res.render('about.ejs');
+
+  checkOutRouter.route('/')
+  .get((req, res)=>{
+      res.render('checkout.ejs');
   });
 
-  return aboutUsRouter;
-}
 
-module.exports = router;
+
+module.exports = checkOutRouter;
