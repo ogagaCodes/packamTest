@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt-nodejs');
 const flash = require('connect-flash');
-const mysql = require('mysql');
+//const mysql = require('mysql');
 const passport = require('passport');
 app.use(flash());
 
