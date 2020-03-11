@@ -1,0 +1,44 @@
+#big-header {
+    background: #7d7d7d;
+    background-blend-mode: multiply;
+    background-blend-mode: screen;
+    border-bottom: 6px solid #ffc30b;
+    transition: 2s ease-in-out;
+    animation: background 2s 1;
+}
+
+@keyframes background {
+    from {
+        background: #fff;
+    }
+    to {
+        background: #7d7d7d
+    }
+}
+
+
+/* styles forcustomer reviews */
+
+#customer-testimony {
+    text-align: center;
+}
+
+.customer-words {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reviewImg {
+    width: 20%;
+    height: 12em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#customerWords {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
