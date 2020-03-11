@@ -22,7 +22,7 @@ app.use(flash());
 //const debug = require('debug')('app');
 
 
-const port = 3000 || process.env.PORT;
+//const port = 3000 || process.env.PORT;
 
 app.set("view engine", "ejs");
 
@@ -109,6 +109,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(port, function() {
-    console.log('listening on port' + port);
-})
+app.listen(proces.env.PORT)
