@@ -36,9 +36,9 @@ require('./config/passport.js');
 
 //querying database just a test
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "okolie",
-    password: "root",
+    host: "testdb.cuvsmbekarpw.us-east-1.rds.amazonaws.com",
+    user: "admin",
+    password: "admin2020",
     database: "test_db"
 });
 
@@ -110,4 +110,4 @@ app.get('/', (req, res) => {
 
 //app.listen(3000);
 
-app.listen(proces.env.PORT, process.env.IP);
+app.listen(process.env.PORT, process.env.IP);
