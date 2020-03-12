@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt-nodejs');
 const flash = require('connect-flash');
-const mysql = require('mysql');
+//const mysql = require('mysql');
 const passport = require('passport');
 app.use(flash());
 
@@ -20,7 +20,7 @@ app.set("view engine", "ejs");
 
 
 // datatbase integration 
-require('./dbConfig/dbConnection.js');
+//require('./dbConfig/dbConnection.js');
 
 // passport configurtion 
 
@@ -28,12 +28,12 @@ require('./config/passport.js');
 
 //querying database just a test
 
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "okolie",
-    password: "root",
-    database: "test_db"
-});
+// const connection = mysql.createConnection({
+//     host: "localhost",
+//     user: "okolie",
+//     password: "root",
+//     database: "test_db"
+// });
 
 // configuring external packages
 app.use(bodyParser.json());
