@@ -3,7 +3,7 @@
 // const cookieParser = require('cookie-parser');
 // const session = require('express-session');
 // const mysql = require('mysql');
-// const passport = require('passport');
+// const passport = require('passport');git 
 // const app = express();
 
 const express = require('express');
@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt-nodejs');
 const flash = require('connect-flash');
-//const mysql = require('mysql');
+const mysql = require('mysql');
 const passport = require('passport');
 app.use(flash());
 
@@ -108,5 +108,6 @@ app.get('/', (req, res) => {
 })
 
 
+//app.listen(3000);
 
 app.listen(proces.env.PORT, process.env.IP);
