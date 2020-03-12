@@ -1,11 +1,3 @@
-// const express = require('express');
-// const bodyParser = require('body-parser');
-// const cookieParser = require('cookie-parser');
-// const session = require('express-session');
-// const mysql = require('mysql');
-// const passport = require('passport');git 
-// const app = express();
-
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -35,10 +27,11 @@ require('./dbConfig/dbConnection.js');
 require('./config/passport.js');
 
 //querying database just a test
+
 const connection = mysql.createConnection({
-    host: "testdb.cuvsmbekarpw.us-east-1.rds.amazonaws.com",
-    user: "admin",
-    password: "admin2020",
+    host: "localhost",
+    user: "okolie",
+    password: "root",
     database: "test_db"
 });
 
