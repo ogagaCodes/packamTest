@@ -109,4 +109,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(proces.env.PORT)
+app.listen(proces.env.PORT, process.env.IP);
